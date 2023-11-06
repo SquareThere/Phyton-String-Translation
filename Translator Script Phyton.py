@@ -4,7 +4,7 @@ import os
 import html
 
 # Set the path to your service account key file
-key_path = r'C:\Users\user.MEW\Documents\1\key.json'  # Replace with the actual path to your key file
+key_path = r'C:\Users\key.json'  # Replace with the actual path to your key file
 
 # Define the language you want to translate to (Swedish)
 target_language = 'sv'  # Change to 'sv' for Swedish
@@ -21,10 +21,10 @@ def translate_text(text):
     return translation['input'], decoded_translated_text
 
 # Directory where your translation files are located
-translation_dir = r'C:\Users\user.MEW\Downloads\trl'
+translation_dir = r'C:\Users\'
 
 # Prompt the user for the directory to save translated files
-output_dir = r'C:\Users\user.MEW\Documents\1'
+output_dir = r'C:\Users\Documents\1'
 
 for filename in os.listdir(translation_dir):
     if filename.endswith('.php'):
